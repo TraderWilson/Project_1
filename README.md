@@ -12,10 +12,10 @@ This endeavor not only bridges the gap between finance and data science but also
 * [stocks_list.csv](https://www.nasdaq.com/market-activity/stocks/screener)
 
 ## **Objectives**
- -- **Data Acquisition:** Utilize yfinance to fetch historical stock data.
- -- **Data Exploration:** Employ libraries such as pandas and numpy for data manipulation and exploration.
--- **Visualization:** Use matplotlib, seaborn, and hvplot to create insightful visualizations of comparison with the stock market and BTC.
--- **Performance Analysis:** Filter and analyze stocks based on correlation/beta/Sharpe Ratio with BTC,  to verify our hypothesis.
+* **Data Acquisition:** Utilize `yfinance` to fetch historical stock data.
+* **Data Exploration:** Employ libraries such as `pandas` and `numpy` for data manipulation and exploration.
+* **Visualization:** Use `matplotlib`, `seaborn`, and `hvplot` to create insightful visualizations of comparison with the stock market and BTC.
+* **Performance Analysis:** Filter and analyze stocks based on `correlation`/`beta`/`Sharpe Ratio` with BTC,  to verify our hypothesis.
 
 ## **Hypothesis**
 It is possible to construct a portfolio of traditional stocks that closely emulates the performance characteristics of Bitcoin (BTC) potentially capturing similar substantial returns without direct investment in BTC itself. This premise opens up a unique avenue for investors looking to diversify their portfolios while seeking the high returns historically associated with Bitcoin.
@@ -23,10 +23,10 @@ It is possible to construct a portfolio of traditional stocks that closely emula
 ## **How to Run the Project**
 
 ### 1. **Install Packages** 
--- `pandas` for data manipulation; 
--- `numpy` for numerical operations;
--- `yfinance` for fetching assets prices;
--- `matplotlib` , `seaborn` and `hvplot` for visualization.
+* `pandas` for data manipulation; 
+* `numpy` for numerical operations;
+* `yfinance` for fetching assets prices;
+* `matplotlib` , `seaborn` and `hvplot` for visualization.
 
 ### 2. **Set Up Global Parameters**
 * In this initial phase, we establish the foundation for our analysis by defining global parameters. These parameters include the date range for our data, the list of stock symbols to analyze alongside Bitcoin, and any financial metrics of interest (e.g., closing price, volume). This step is crucial as it ensures that all subsequent analyses operate under a consistent set of assumptions and data scope. 
@@ -62,8 +62,6 @@ def print_portfolio_summary(perf, weights, assets, name):
 ```python
 (port_1_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 1 and BTC')
 
-![Portfolio 1 Performance](https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png)
-
 (port_2_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 2 and BTC')
 
 (port_3_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 3 and BTC')
@@ -72,6 +70,8 @@ def print_portfolio_summary(perf, weights, assets, name):
 
 (port_5_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 5 and BTC')
 ```
+![Portfolio 1 Performance](https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png)
+
 ### 6. **Backtesting Trading Strategy**
 * Finally, we backtest trading strategies based on historical data to ascertain their potential effectiveness. This involves applying the identified correlations and portfolio allocations to past data to simulate trading performance, offering insights into the strategies' viability in real-world conditions.
 
