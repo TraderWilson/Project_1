@@ -73,6 +73,10 @@ def shift_cor(days, daily_rtn, assets):
 ```python
 def print_portfolio_summary(perf, weights, assets, name):
 ```
+<!-- Insert the image before the text -->
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/MC%20Filter%205.png' width='800'>
+<!-- Code block -->
+
 ### 5. **Comparison with Portfolio and BTC**
 * This analysis contrasts the risk and return profiles of a diversified portfolio against Bitcoin alone. By comparing the performance of mixed-asset portfolios to the benchmark (Bitcoin), we can assess the impact of diversification on investment returns.
 ```python
