@@ -56,6 +56,15 @@ btc_sharpe_ratio = (btc_avg_rtn - interest_rate) / btc_vol
 ```python
 def shift_cor(days, daily_rtn, assets):
 ```
+<!-- Insert the image before the text -->
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/shift1.png' width='800'>
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Shift2.png' width='800'>
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/shift3.png' width='800'>
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/shift4.png' width='800'>
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/shift5.png' width='800'>
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/shift6.png' width='800'>
+<!-- Code block -->
+
 ### 4. **Finding the Efficient Frontier Using Monte Carlo Simulations**
 * We employ Monte Carlo simulations to map out the efficient frontier for a portfolio that includes selected stocks. This approach involves simulating n_portfolios times of  asset weight combinations to identify those that yield the highest returns for a given level of risk.
 
