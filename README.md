@@ -1,3 +1,5 @@
+!(https://github.com/TraderWilson/Project_1/blob/main/Image/Background.png)
+
 # Deciphering the Dance: Analyzing the Correlation Between BTC & US Stocks
 
 ## **Background**
@@ -45,6 +47,8 @@ beta.hvplot.hist(bins = 3600, title = 'Distribution of Beta relative with BTC', 
 
 btc_sharpe_ratio = (btc_avg_rtn - interest_rate) / btc_vol
 ```
+![correlation](https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Assets'%20Correlation%20with%20BTC.png)
+
 * In this part, according to the function `shift_cor`, we also find out that BTC would be a leading indicator within a week, which will be proved in part 6.
 ```python
 def shift_cor(days, daily_rtn, assets):
@@ -70,7 +74,7 @@ def print_portfolio_summary(perf, weights, assets, name):
 
 (port_5_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 5 and BTC')
 ```
-![Portfolio 1 Performance](https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png)
+![Portfolio 1 Performance](https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png =250x250)
 
 ### 6. **Backtesting Trading Strategy**
 * Finally, we backtest trading strategies based on historical data to ascertain their potential effectiveness. This involves applying the identified correlations and portfolio allocations to past data to simulate trading performance, offering insights into the strategies' viability in real-world conditions.
