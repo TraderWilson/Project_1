@@ -47,8 +47,10 @@ beta.hvplot.hist(bins = 3600, title = 'Distribution of Beta relative with BTC', 
 
 btc_sharpe_ratio = (btc_avg_rtn - interest_rate) / btc_vol
 ```
-<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Assets'%20Correlation%20with%20BTC.png' width='800'>
-                                                                                                                                     <img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Beta.png' width='800'> 
+<!-- Insert the image before the text -->
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Beta.png' width='800'>
+<!-- Code block -->
+
 
 * In this part, according to the function `shift_cor`, we also find out that BTC would be a leading indicator within a week, which will be proved in part 6.
 ```python
@@ -75,6 +77,7 @@ def print_portfolio_summary(perf, weights, assets, name):
 
 (port_5_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 5 and BTC')
 ```
+<!-- Insert the image before the text -->
 <img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png' width='800'>
 
 <img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%202%20and%20BTC.png' width='800'>
@@ -84,6 +87,7 @@ def print_portfolio_summary(perf, weights, assets, name):
 <img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%204%20and%20BTC.png' width='800'>
 
 <img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%205%20and%20BTC.png' width='800'>
+<!-- Code block -->
 
 ### 6. **Backtesting Trading Strategy**
 * Finally, we backtest trading strategies based on historical data to ascertain their potential effectiveness. This involves applying the identified correlations and portfolio allocations to past data to simulate trading performance, offering insights into the strategies' viability in real-world conditions.
@@ -98,6 +102,16 @@ def print_portfolio_summary(perf, weights, assets, name):
 def strategy_ma_2(days, df_price, df_rtn, btc_df):
 ```
 * In this part, we prove that BTC is a short term leading indicator, but not for long term.
+
+<!-- Insert the image before the text -->
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Strategies%20EMA%208%20Comparison%20Filter%203.png' width='800'>
+
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Strategies%20EMA%2020%20Comparison%20Filter%203.png' width='800'>
+
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Strategies%20MA%2050%20Comparison%20Filter%203.png' width='800'>
+
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Strategies%20MA%20200%20Comparison%20Filter%203.png' width='800'>
+<!-- Code block -->
 
 ## **Conclusion**
 Our project embarked on a mission to uncover if a traditional stock portfolio could emulate the high returns of Bitcoin (BTC) without direct investment in the cryptocurrency. Here are the succinct outcomes:
