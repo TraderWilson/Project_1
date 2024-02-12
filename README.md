@@ -1,4 +1,4 @@
-!(https://github.com/TraderWilson/Project_1/blob/main/Image/Background.png)
+![](https://github.com/TraderWilson/Project_1/blob/main/Image/Background.png)
 
 # Deciphering the Dance: Analyzing the Correlation Between BTC & US Stocks
 
@@ -74,7 +74,7 @@ def print_portfolio_summary(perf, weights, assets, name):
 
 (port_5_plot * btc_plot).opts(title = 'Cumulative Returns Comparison with Filter 5 and BTC')
 ```
-![Portfolio 1 Performance](https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png =250x250)
+!<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Performance%20Comparison%20with%20Filter%201%20and%20BTC.png' width='250'>
 
 ### 6. **Backtesting Trading Strategy**
 * Finally, we backtest trading strategies based on historical data to ascertain their potential effectiveness. This involves applying the identified correlations and portfolio allocations to past data to simulate trading performance, offering insights into the strategies' viability in real-world conditions.
