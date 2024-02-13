@@ -39,7 +39,7 @@ filter_stocks = full_stocks[full_stocks['Volume'] >= full_stocks['Volume'].quant
 ```
 ### 3. **Data Exploration**
 * This section is dedicated to a thorough examination of the dataset, employing statistical analyses and visualizations to uncover the relationship with BTC and stocks, such as correlation, beta and Sharpe Ratio.
-* According to the correlation_matrix, beta and btc_sharpe_ratio, and using statistical analysis of returns, including volatility and average returns, we construct 5 portfolios to see how their performances are relative with BTC, which will be shown in part 5. 
+* Based on the `correlation_matrix`, `beta`, and the `Sharpe Ratio`, we employ statistical analysis of returns, which includes examining volatility and average returns. Our objective is to construct five portfolios to evaluate their performances relative to BTC. The performance comparisons and detailed analyses of these portfolios will be presented in Part 5. 
 ```python
 correlation_matrix['BTC'].hvplot.hist(bins = 100, xlabel = 'Correlation', title = "Distribution of Assets' Correlation with BTC")
 
@@ -69,8 +69,9 @@ def shift_cor(days, daily_rtn, assets):
 ### 4. **Finding the Efficient Frontier Using Monte Carlo Simulations**
 * We employ Monte Carlo simulations to map out the efficient frontier for a portfolio that includes selected stocks. This approach involves simulating n_portfolios times of  asset weight combinations to identify those that yield the highest returns for a given level of risk.
 
-* After Monte Carlo Simulation, we use the function `print_portfolio_summary` to get the optimal assets weights for each portfolio.
+* To map out the efficient frontier for a portfolio comprising selected stocks, we utilize Monte Carlo simulations. This method involves simulating various asset weight combinations a specified number of times (denoted as `n_portfolios`) to pinpoint those combinations that offer the highest returns for a given level of risk.
 
+* Following the completion of the Monte Carlo simulations, we employ the `print_portfolio_summary` function to ascertain the optimal asset weights for each portfolio. This step is pivotal in identifying portfolios that lie on the efficient frontier, thereby optimizing the risk-return trade-off.
 ```python
 def print_portfolio_summary(perf, weights, assets, name):
 ```
@@ -107,11 +108,11 @@ def print_portfolio_summary(perf, weights, assets, name):
 * Finally, we backtest trading strategies based on historical data to ascertain their potential effectiveness. This involves applying the identified correlations and portfolio allocations to past data to simulate trading performance, offering insights into the strategies' viability in real-world conditions.
 
 * We employ two trading strategies to see how the portfolios performance are relative to BTC. The common part is we set up EMA 8, EMV 20, MA 50 and MA200 moving average for each portfolio. The difference is as follows:
-> 1. Portfolio's own price moving average strategy. That means the trading signal comes from portfolio's price itself.
+> 1. The portfolio's price moving average strategy generates trading signals based on the portfolio's own price movements.
 ```python
  def strategy_ma(days, df_price, df_rtn):
 ```
-> 2. BTC price moving average strategy. That means the trading signal comes from BTC price, not the portfolio itself. As mentioned in part 3, there is a hint that BTC would be a leading indicator within a week.
+> 2. The BTC price moving average strategy generates trading signals based on BTC's price movements, rather than the portfolio's own performance. As highlighted in Part 3, this approach is informed by the observation that BTC may serve as a leading indicator for market movements within a week.
 ```python
 def strategy_ma_2(days, df_price, df_rtn, btc_df):
 ```
