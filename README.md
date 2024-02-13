@@ -1,4 +1,4 @@
-<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Background.png' width="1000" height="400">
+<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Background.jpeg' width="1000" height="400">
 
 # Deciphering the Dance: Analyzing the Correlation Between BTC & US Stocks
 
