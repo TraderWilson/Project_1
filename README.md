@@ -48,7 +48,8 @@ beta.hvplot.hist(bins = 3600, title = 'Distribution of Beta relative with BTC', 
 btc_sharpe_ratio = (btc_avg_rtn - interest_rate) / btc_vol
 ```
 <!-- Insert the image before the text -->
-<img src='https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Beta.png' width='800'>
+<img src="https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Beta.png" width='800'>
+<img src="https://github.com/TraderWilson/Project_1/blob/main/Image/Distribution%20of%20Assets'%20Correlation%20with%20BTC.png" width='800'>
 <!-- Code block -->
 
 
