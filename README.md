@@ -142,3 +142,17 @@ Through the analysis of 1-7 day shift correlations and backtesting with BTC's mo
 
 ## Limitations and Future Research
 Acknowledging the limitations of historical data reliance, future research is encouraged to explore dynamic asset selection and include more sophisticated risk management to refine the portfolio construction process.
+
+## Contribution
+Our team is comprised of the following members: Lulu Ma, Kimberly Rodriguez, German Romero and Wilson Qin.
+
+We met on the following days outside of class:
+* Saturday, 2/3/24
+* Tuesday, 2/6/24
+* Friday, 2/9/24
+* Saturday, 2/10/24
+* Sunday, 2/11/24
+* Tuesday, 2/13/24
+
+
+
